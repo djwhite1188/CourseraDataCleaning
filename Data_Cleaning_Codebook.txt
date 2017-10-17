@@ -1,0 +1,24 @@
+ DATA DICTIONARY - 2006 HOUSING
+RT 1
+ Record Type
+ H .Housing Record or Group Quarters Unit
+
+1 - key
+ key
+ Unique identifier of Subject and activity, and feature
+
+2 - Activity
+ string
+ Description of movement subject was engaged in at time of observerd feature calculation
+
+3 - Subject
+ integer
+ Numbered value representing which subject the observed activity and feature calucation is
+
+4 - feature
+ string
+ description of the 67 observed calculations ranging from mean of body acceleration to standard deviation of body gyro jerk (see readme)
+
+5 - calc
+ value
+ associated value described in the feature representing the unique combination of subject and activity
