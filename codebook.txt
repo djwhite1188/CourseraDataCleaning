@@ -1,0 +1,114 @@
+CodeBook for Wearable_Tidy_Coursera_Assignment
+
+Feature Selection 
+=================
+
+The estimates for the variables represent the average of the average of the original file.
+
+Original
+---------------
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+
+
+
+The complete list of variables of each feature vector is available below:
+Col	Description
+1	Activity
+2	Subject
+3	time-BodyAcc-mean()-X
+4	time-BodyAcc-mean()-Y
+5	time-BodyAcc-mean()-Z
+6	time-BodyAcc-std()-X
+7	time-BodyAcc-std()-Y
+8	time-BodyAcc-std()-Z
+9	time-GravityAcc-mean()-X
+10	time-GravityAcc-mean()-Y
+11	time-GravityAcc-mean()-Z
+12	time-GravityAcc-std()-X
+13	time-GravityAcc-std()-Y
+14	time-GravityAcc-std()-Z
+15	time-BodyAccJerk-mean()-X
+16	time-BodyAccJerk-mean()-Y
+17	time-BodyAccJerk-mean()-Z
+18	time-BodyAccJerk-std()-X
+19	time-BodyAccJerk-std()-Y
+20	time-BodyAccJerk-std()-Z
+21	time-BodyGyro-mean()-X
+22	time-BodyGyro-mean()-Y
+23	time-BodyGyro-mean()-Z
+24	time-BodyGyro-std()-X
+25	time-BodyGyro-std()-Y
+26	time-BodyGyro-std()-Z
+27	time-BodyGyroJerk-mean()-X
+28	time-BodyGyroJerk-mean()-Y
+29	time-BodyGyroJerk-mean()-Z
+30	time-BodyGyroJerk-std()-X
+31	time-BodyGyroJerk-std()-Y
+32	time-BodyGyroJerk-std()-Z
+33	time-BodyAccMag-mean()
+34	time-BodyAccMag-std()
+35	time-GravityAccMag-mean()
+36	time-GravityAccMag-std()
+37	time-BodyAccJerkMag-mean()
+38	time-BodyAccJerkMag-std()
+39	time-BodyGyroMag-mean()
+40	time-BodyGyroMag-std()
+41	time-BodyGyroJerkMag-mean()
+42	time-BodyGyroJerkMag-std()
+43	freq-BodyAcc-mean()-X
+44	freq-BodyAcc-mean()-Y
+45	freq-BodyAcc-mean()-Z
+46	freq-BodyAcc-stime-d()-X
+47	freq-BodyAcc-stime-d()-Y
+48	freq-BodyAcc-stime-d()-Z
+49	freq-BodyAccJerk-mean()-X
+50	freq-BodyAccJerk-mean()-Y
+51	freq-BodyAccJerk-mean()-Z
+52	freq-BodyAccJerk-stime-d()-X
+53	freq-BodyAccJerk-stime-d()-Y
+54	freq-BodyAccJerk-stime-d()-Z
+55	freq-BodyGyro-mean()-X
+56	freq-BodyGyro-mean()-Y
+57	freq-BodyGyro-mean()-Z
+58	freq-BodyGyro-stime-d()-X
+59	freq-BodyGyro-stime-d()-Y
+60	freq-BodyGyro-stime-d()-Z
+61	freq-BodyAccMag-mean()
+62	freq-BodyAccMag-stime-d()
+63	freq-BodyBodyAccJerkMag-mean()
+64	freq-BodyBodyAccJerkMag-stime-d()
+65	freq-BodyBodyGyroMag-mean()
+66	freq-BodyBodyGyroMag-stime-d()
+67	freq-BodyBodyGyroJerkMag-mean()
+68	freq-BodyBodyGyroJerkMag-stime-d()
